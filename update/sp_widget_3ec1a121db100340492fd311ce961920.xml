@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function(cabrillo) {
+  /* widget controller */
+  var c = this;
+	
+	c.button_1_label = '1';
+	c.button_2_label = '2';
+	
+	c.debug = '';
+		
+	var _generateButtons = function() {
+		return [
+			{ title: c.button_1_label, id: 'button_1'},
+			{ title: c.button_2_label, id: 'button_2' }	
+		]
+	}
+	
+	c.buttons = [];
+	
+	c.renderButtons = function() {
+		c.buttons = _generateButtons();
+		cabrillo.viewLayout.setNavigationBarButtons(c.buttons, c.onNavButtonPress);
+	}
+	
+	c.renderButtons();
+	
+	c.onNavButtonPress = function(index) {
+		var b = c.buttons[index];
+		c.debug = 'You pressed: ' + b.id;
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>x-snc-sp-cabrillo-setnavigationbarbutton</id>
+        <internal>false</internal>
+        <link/>
+        <name>Cabrillo Showcase - setNavigationBarButt</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2017-07-31 11:27:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3ec1a121db100340492fd311ce961920</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Cabrillo Showcase - setNavigationBarButt</sys_name>
+        <sys_package display_value="SP Cabrillo" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SP Cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
+        <sys_update_name>sp_widget_3ec1a121db100340492fd311ce961920</sys_update_name>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2017-07-31 11:40:54</sys_updated_on>
+        <template><![CDATA[<div class="x-snc-sp-cabrillo-setnavigationbarbutton">
+  <form class="form" ng-submit="c.renderButtons()">
+    <div class="form-group">
+      <label for="xsncbut1">${Button 1 Label}</label>
+      <input name="xsncbut1" type="text" class="form-control" ng-model="c.button_1_label" />
+    </div>
+    <div class="form-group">
+      <label for="xsncbut2">${Button 2 Label}</label>
+      <input name="xsncbut2" type="text" class="form-control" ng-model="c.button_2_label" />
+    </div>
+    <button class="btn btn-primary">${Update Buttons}</button>
+  </form>
+  <div class="code">
+    {{c.debug}}
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
