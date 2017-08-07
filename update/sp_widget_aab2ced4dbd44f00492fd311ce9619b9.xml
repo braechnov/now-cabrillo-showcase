@@ -8,7 +8,9 @@
 	c.results = [];
 	
 	c.triggerGeoLocation = function() {
-		c.results.push('Geolocation triggered');
+		
+		cabrillo.viewLayout.showSpinner();
+		
 		cabrillo.geolocation.getCurrentLocation().then(
 			c.handleGeoLocationResult,
 			c.handleGeoLocationError
@@ -16,10 +18,12 @@
 	}
 	
 	c.handleGeoLocationResult = function(result) {
+		cabrillo.viewLayout.hideSpinner();
 		c.results.push(result);
 	}
 	
 	c.handleGeoLocationError = function(err) {
+		cabrillo.viewLayout.hideSpinner();
 		c.results.push(err);
 	}
 }]]></client_script>
@@ -45,15 +49,15 @@
         <sys_created_on>2017-07-27 16:39:11</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>aab2ced4dbd44f00492fd311ce9619b9</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Cabrillo Showcase - Geolocation</sys_name>
         <sys_package display_value="SP Cabrillo" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="SP Cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
         <sys_update_name>sp_widget_aab2ced4dbd44f00492fd311ce9619b9</sys_update_name>
-        <sys_updated_by>chris.hann</sys_updated_by>
-        <sys_updated_on>2017-07-28 08:03:19</sys_updated_on>
+        <sys_updated_by>fabio.petito</sys_updated_by>
+        <sys_updated_on>2017-08-07 17:08:20</sys_updated_on>
         <template><![CDATA[<div class="x-snc-sp-cabrillo-geolocation">
   <button class="btn btn-primary" ng-click="c.triggerGeoLocation()">${Trigger Geolocation}</button>
   <div>${Results}: {{c.results.length}}</div>

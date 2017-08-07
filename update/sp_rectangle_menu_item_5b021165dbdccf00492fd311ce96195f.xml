@@ -13,7 +13,7 @@
         <kb_article/>
         <kb_category/>
         <kb_topic/>
-        <label>modal?</label>
+        <label>modal</label>
         <order>100</order>
         <record_script/>
         <sc_cat_item/>
@@ -27,15 +27,15 @@
         <sys_created_on>2017-07-31 10:18:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5b021165dbdccf00492fd311ce96195f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>modal?</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>modal</sys_name>
         <sys_package display_value="SP Cabrillo" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="SP Cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
         <sys_update_name>sp_rectangle_menu_item_5b021165dbdccf00492fd311ce96195f</sys_update_name>
-        <sys_updated_by>chris.hann</sys_updated_by>
-        <sys_updated_on>2017-07-31 11:59:46</sys_updated_on>
+        <sys_updated_by>fabio.petito</sys_updated_by>
+        <sys_updated_on>2017-08-07 16:58:48</sys_updated_on>
         <table/>
         <type>page</type>
         <url/>

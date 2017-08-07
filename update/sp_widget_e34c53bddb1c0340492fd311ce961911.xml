@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function(cabrillo) {
+  /* widget controller */
+  var c = this;
+	
+	c.table = 'sc_catalog';
+	c.record = '742ce428d7211100f2d224837e61036d';//Technical Catalog
+	
+	c.checkForm = function() {
+		
+		c.result = cabrillo.form.didChangeRecord(false,c.table,c.record);
+	}
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>x-snc-sp-cabrillo-form</id>
+        <internal>false</internal>
+        <link/>
+        <name>Cabrillo Showcase - Form</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>fabio.petito</sys_created_by>
+        <sys_created_on>2017-08-01 15:01:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e34c53bddb1c0340492fd311ce961911</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Cabrillo Showcase - Form</sys_name>
+        <sys_package display_value="SP Cabrillo" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SP Cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
+        <sys_update_name>sp_widget_e34c53bddb1c0340492fd311ce961911</sys_update_name>
+        <sys_updated_by>fabio.petito</sys_updated_by>
+        <sys_updated_on>2017-08-01 15:40:33</sys_updated_on>
+        <template><![CDATA[<div class="x-snc-sp-cabrillo-form">
+  <h1>${Monitor a record}</h1>
+  <form class="form" ng-submit="c.checkForm()">
+    <div class="form-group">
+      <label for="">${Table}</label>
+      <input class="form-control" type="text" ng-model="c.table" />
+    </div>
+    
+    <div class="form-group">
+      <label for="">${Record (sys_id)}</label>
+      <input class="form-control" type="text" ng-model="c.record" />
+    </div>
+    
+    <button class="btn btn-primary btn-block">${Start Monitoring}</button>
+    
+  </form>
+
+  <div>
+    {{c.result}}
+  </div>
+
+</div>]]></template>
+    </sp_widget>
+</record_update>

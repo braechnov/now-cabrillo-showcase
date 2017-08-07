@@ -22,17 +22,17 @@
         <sys_created_on>2017-07-27 16:43:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>69b38a18dbd44f00492fd311ce96198f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Carbillo Showcase</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Cabrillo Showcase</sys_name>
         <sys_package display_value="SP Cabrillo" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="SP Cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
         <sys_update_name>sp_portal_69b38a18dbd44f00492fd311ce96198f</sys_update_name>
         <sys_updated_by>chris.hann</sys_updated_by>
-        <sys_updated_on>2017-07-27 16:46:04</sys_updated_on>
+        <sys_updated_on>2017-08-01 12:14:52</sys_updated_on>
         <theme display_value="Cabrillo Showcase">d9440258dbd44f00492fd311ce961930</theme>
-        <title>Carbillo Showcase</title>
+        <title>Cabrillo Showcase</title>
         <url_suffix>cabrillo_showcase</url_suffix>
     </sp_portal>
     <sys_translated_text action="delete_multiple" query="documentkey=69b38a18dbd44f00492fd311ce96198f"/>
