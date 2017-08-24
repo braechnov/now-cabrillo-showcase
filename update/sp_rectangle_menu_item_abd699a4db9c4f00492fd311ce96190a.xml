@@ -20,7 +20,7 @@
         <sc_category/>
         <short_description/>
         <sp_page display_value="cabrillo_showcase_barcode">f38695a4db9c4f00492fd311ce9619b4</sp_page>
-        <sp_rectangle_menu display_value="Cabrillo - Home Menu">f2f54298dbd44f00492fd311ce961907</sp_rectangle_menu>
+        <sp_rectangle_menu/>
         <sp_rectangle_menu_item/>
         <sys_class_name>sp_rectangle_menu_item</sys_class_name>
         <sys_created_by>chris.hann</sys_created_by>

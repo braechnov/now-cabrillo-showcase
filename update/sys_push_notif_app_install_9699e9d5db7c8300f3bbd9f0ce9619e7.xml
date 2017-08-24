@@ -2,13 +2,13 @@
 <record_update table="sys_push_notif_app_install">
     <sys_push_notif_app_install action="INSERT_OR_UPDATE">
         <active>true</active>
-        <last_registered_on>2017-08-07 17:08:39</last_registered_on>
+        <last_registered_on>2017-08-24 16:50:59</last_registered_on>
         <sys_class_name>sys_push_notif_app_install</sys_class_name>
         <sys_created_by>fabio.petito</sys_created_by>
-        <sys_created_on>2017-08-07 16:54:39</sys_created_on>
+        <sys_created_on>2017-08-24 13:54:42</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>24cf6a7fdb5c0740492fd311ce96199c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_id>9699e9d5db7c8300f3bbd9f0ce9619e7</sys_id>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>4945edcb88f16635f1e42465fb0821048864aa8b53749da69148044efec0f967</sys_name>
         <sys_package display_value="SP Cabrillo" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
         <sys_policy/>
@@ -16,9 +16,9 @@
         <sys_push_platform_id display_value="Apple">20e71f30ff0002009738ffffffffff6b</sys_push_platform_id>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="SP Cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
-        <sys_update_name>sys_push_notif_app_install_24cf6a7fdb5c0740492fd311ce96199c</sys_update_name>
+        <sys_update_name>sys_push_notif_app_install_9699e9d5db7c8300f3bbd9f0ce9619e7</sys_update_name>
         <sys_updated_by>fabio.petito</sys_updated_by>
-        <sys_updated_on>2017-08-07 17:08:39</sys_updated_on>
+        <sys_updated_on>2017-08-24 16:50:59</sys_updated_on>
         <sys_user_id display_value="Fabio ">214910c6dbde7a00492fd311ce961975</sys_user_id>
         <token>4945edcb88f16635f1e42465fb0821048864aa8b53749da69148044efec0f967</token>
     </sys_push_notif_app_install>

@@ -18,16 +18,16 @@
         <record_script/>
         <sc_cat_item/>
         <sc_category/>
-        <short_description/>
+        <short_description>This is a description</short_description>
         <sp_page display_value="cabrillo_showcase_list">32d05fb5db1c0340492fd311ce9619e2</sp_page>
-        <sp_rectangle_menu display_value="Cabrillo - Home Menu">f2f54298dbd44f00492fd311ce961907</sp_rectangle_menu>
+        <sp_rectangle_menu/>
         <sp_rectangle_menu_item/>
         <sys_class_name>sp_rectangle_menu_item</sys_class_name>
         <sys_created_by>chris.hann</sys_created_by>
         <sys_created_on>2017-07-31 10:18:51</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5502dd25dbdccf00492fd311ce9619e0</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>list</sys_name>
         <sys_package display_value="SP Cabrillo" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
         <sys_policy/>
@@ -35,7 +35,7 @@
         <sys_scope display_value="SP Cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
         <sys_update_name>sp_rectangle_menu_item_5502dd25dbdccf00492fd311ce9619e0</sys_update_name>
         <sys_updated_by>fabio.petito</sys_updated_by>
-        <sys_updated_on>2017-08-01 14:19:28</sys_updated_on>
+        <sys_updated_on>2017-08-24 13:56:34</sys_updated_on>
         <table/>
         <type>page</type>
         <url/>

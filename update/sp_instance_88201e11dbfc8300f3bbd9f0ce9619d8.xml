@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">568e8edddbbc8300f3bbd9f0ce9619d3</sp_column>
+        <sp_widget display_value="Cabrillo Showcase - Core">a55e4edddbbc8300f3bbd9f0ce9619bc</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>fabio.petito</sys_created_by>
+        <sys_created_on>2017-08-24 16:43:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>88201e11dbfc8300f3bbd9f0ce9619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SP Cabrillo" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="SP Cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
+        <sys_update_name>sp_instance_88201e11dbfc8300f3bbd9f0ce9619d8</sys_update_name>
+        <sys_updated_by>fabio.petito</sys_updated_by>
+        <sys_updated_on>2017-08-24 16:43:02</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=88201e11dbfc8300f3bbd9f0ce9619d8"/>
+</record_update>
