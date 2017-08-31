@@ -15,10 +15,10 @@
         <sys_id>2f3025eddbdccf00492fd311ce9619ec</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>cabrillo_showcase_viewlayout</sys_name>
-        <sys_package display_value="SP Cabrillo" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
+        <sys_package display_value="Cabrillo Showcase Portal" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="SP Cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
+        <sys_scope display_value="Cabrillo Showcase Portal">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
         <sys_update_name>sp_page_2f3025eddbdccf00492fd311ce9619ec</sys_update_name>
         <sys_updated_by>chris.hann</sys_updated_by>
         <sys_updated_on>2017-07-31 11:20:55</sys_updated_on>

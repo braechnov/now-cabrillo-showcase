@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function ($rootScope, $scope, snRecordWatcher, spUtil, $location, $uibModal, cabrillo, $timeout) {
+	$scope.userID = $scope.user.sys_id;
+	$scope.isViewNative = false;
+	
+	if (cabrillo.isNative())
+		$scope.isViewNative = true;
+}
+		]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.navbar {
+  transition: 250ms opacity ease-in-out;
+  -webkit-transition: 250ms opacity ease-in-out;
+  border: 0;
+  border-bottom: 4px solid $sp-navbar-divider-color;
+}
+
+.navbar-fade {
+  opacity: 0.4;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+header[role="banner"],
+.nav &gt; li &gt; a {
+  max-height: 60px;
+}
+
+@media screen and (max-width: 768px){
+  .nav &gt; li &gt; a {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+.navbar-brand {
+  max-height: 60px;
+  padding: 0;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-brand img, .navbar-brand span {
+  margin-left: $sp-logo-margin-x;
+  margin-right: $sp-logo-margin-x;
+  margin-top: $sp-logo-margin-y;
+  margin-bottom: $sp-logo-margin-y;
+  display: block;
+  max-height: $sp-logo-max-height;
+  max-width: $sp-logo-max-width;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.breadcrumb-container {
+  background-color: $panel-bg;
+}
+
+/* for mobile app */
+.navbar-inverse.is-native {
+  background-color: #405060;
+}
+
+nav{
+ margin-bottom: 0px;
+ border-radius: 0px;
+}
+
+.navbar-collapse{
+padding-right: 0px;
+}
+
+.navbar-nav {
+margin: 0px;
+}
+
+/* PRB923910: Fix for Service Portal - Header Poorly Aligned in Safari */
+@media screen and (min-width: 768px) {
+  .navbar-collapse {
+    display: flex !important;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>x-snc-sp-cabrillo-header</id>
+        <internal>false</internal>
+        <link><![CDATA[function(scope, element) {
+
+}]]></link>
+        <name>Cabrillo Showcase - Header</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[// Defines the support queue ID that will be linked to by the Live Chat link in header
+data.connect_support_queue_id = $sp.getValue('sp_chat_queue');
+data.login_page = $sp.getValue('login_page');
+data.profileBtnMsg = gs.getMessage("Press space to access user profile or logout");
+var menu = $sp.getValue("sp_rectangle_menu");
+data.menu = $sp.getWidgetFromInstance(menu);
+if (data.menu && data.menu.data) {
+	data.menu.data.replace = true;
+	// Hide login if menu already has link to login
+	data.hasLogin = false;
+	if (data.menu.data.menu.items) {
+		for(var i in data.menu.data.menu.items) {
+			var item = data.menu.data.menu.items[i];
+			if (item.type == 'page' && item.sp_page == data.login_page)
+				data.hasLogin = true;
+		}
+	}
+}]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>chris.hann</sys_created_by>
+        <sys_created_on>2017-08-31 08:38:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3a6424a3db70c300f3bbd9f0ce9619a8</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Cabrillo Showcase - Header</sys_name>
+        <sys_package display_value="Cabrillo Showcase Portal" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Cabrillo Showcase Portal">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
+        <sys_update_name>sp_header_footer_3a6424a3db70c300f3bbd9f0ce9619a8</sys_update_name>
+        <sys_updated_by>chris.hann</sys_updated_by>
+        <sys_updated_on>2017-08-31 10:59:12</sys_updated_on>
+        <template><![CDATA[<div class="x-snc-sp-cabrillo-header container">
+  <div class="row" ng-if="!isViewNative">
+    <div class="col-xs-12 m-t">
+      <div class="alert alert-warning" role="alert">
+        <h4 class="m-t-xs">${This site is designed for use in the ServiceNow iOS/Android App}</h4>
+        <p>${This site provides some sample widgets that take advantage of the of the "cabrillo" API available in the native iOS/Android application}</p>
+        <p class="m-t">${Please install the App and then open this site by going to the "Cabrillo Showcase" menu item}</p>
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_header_footer>
+</record_update>

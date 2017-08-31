@@ -11,10 +11,10 @@
         <sys_id>a2b86cf6db6c8b40492fd311ce9619f1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Temp.Portal</sys_name>
-        <sys_package display_value="SP Cabrillo" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
+        <sys_package display_value="Cabrillo Showcase Portal" source="x_snc_sp_cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="SP Cabrillo">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
+        <sys_scope display_value="Cabrillo Showcase Portal">af524ad4dbd44f00492fd311ce9619fb</sys_scope>
         <sys_update_name>sys_ui_mobile_home_page_section_m2m_home_page_module_a2b86cf6db6c8b40492fd311ce9619f1</sys_update_name>
         <sys_updated_by>fabio.petito</sys_updated_by>
         <sys_updated_on>2017-08-16 14:46:28</sys_updated_on>
